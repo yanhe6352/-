@@ -3,12 +3,110 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="lib/mui-master/dist/css/mui.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>        
+        <script src="lib/jquery/jquery-1.11.1.min.js"></script>
+         <script src="lib/mui-master/dist/js/mui.js"></script>
+      
 	</head>
-	<body>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-	</body>
+   <body>
+       <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+         <!-- 主页面容器 -->
+         <div class="mui-inner-wrap">
+       	<!-- 主页面标题 -->
+       	<header class="mui-bar mui-bar-nav">
+       	  <h1 class="mui-title">美团酒店</h1>
+       	</header>
+       	<nav class="mui-bar mui-bar-tab">
+       		<a class="mui-tab-item mui-active">
+       			<span class="mui-icon mui-icon-home"></span>
+       			<span class="mui-tab-label">首页</span>
+       		</a>
+       		<a class="mui-tab-item" href="order.html">
+       			<span class="mui-icon mui-icon-phone"></span>
+       			<span class="mui-tab-label">订单</span>
+       		</a>
+       		<a class="mui-tab-item">
+       			<span class="mui-icon mui-icon-email"></span>
+       			<span class="mui-tab-label">抵用券</span>
+       		</a>
+       	</nav>
+       	<div class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+       		<!-- 主界面具体展示内容 -->
+               <ul class="mui-table-view">
+                    <li class="mui-table-view-cell">
+                       <span id="f-room">全日房</span>
+                       <span id="t-room">钟点房</span>
+                       <strong></strong>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">泸州</a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <p>今晚入住</p>
+                               
+                        </a>
+                    </li>
+                    <form class="mui-input-group">
+                        <div class="mui-input-row">
+                            <label>我的附近</label>
+                            <input type="text" class="mui-input-clear" placeholder="搜索酒店/地名/关键词" >
+                            <a class="mui-navigate-right"></a>
+                        </div>
+                    </form> 
+                    <form class="mui-input-group">
+                        <div class="mui-input-row">
+                            <input type="text" class="mui-input-clear" placeholder="设置我喜欢的星级/价格" >
+                            <a class="mui-navigate-right"></a>
+                        </div>
+                    </form>             
+                    <li class="mui-table-view-cell">
+                       <div id=""><a href="#">查找酒店</a></div>
+                    </li>
+                </ul>
+              
+                <div class="mui-slider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lb5.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/lb1.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/lb2.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/lb3.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/lb4.png" /></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/lb5.png" /></a></div>
+                        <!--支持循环，需要重复图片节点-->
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/lb1.png" /></a></div>
+                    </div>
+                </div>
+                <div id="sever">
+                    <img src="images/server.png" >
+                </div>
+               
+               
+                
+       	  </div>
+       	</div>  
+         </div>
+       </div>
+   </body> 
+       
+        <script type="text/javascript">
+        	var gallery = mui('.mui-slider');
+                gallery.slider({
+                interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+            });
+            
+            mui(".mui-scroll-wrapper").scroll({
+                deceleration : 0.0005
+            });
+                        
+                
+        </script>
+        
+       
 </html>
