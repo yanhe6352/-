@@ -1,0 +1,46 @@
+.mui-bar{
+    height: 75px;
+    background-color:rgb(223,61,47);
+    position: fixed;
+}
+.mui-bar .mui-title{
+    line-height: 75px;
+    font-size: 20px;
+    left: 15px;
+    text-align: left;
+    color: #fff;
+}
+/* 主体 */
+.mui-bar-nav~.mui-content{
+    padding-top: 77px;
+    background-color:rgb(255,255,255);
+  
+}
+.mui-ios .mui-table-view-cell {
+    min-height: 50px;
+    padding: 4px 13px;
+}
+#f-room{
+    font-size: 15px;
+}
+#t-room{
+    color: #CCCCCC;
+}
+#follow{
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    border: 1px solid #DC143C;
+    color: #DC143C;
+    padding: 0 10px;
+}
+/* 底部 ------------*/
+.mui-bar-tab{
+    position: fixed;
+    height: 55px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+     color: crimson;
+ }
